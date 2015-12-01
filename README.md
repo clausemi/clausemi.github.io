@@ -1,1 +1,1212 @@
 # clausemi.github.io
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+     
+       <title>{Title}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+       
+       
+        <meta name="color:scrollbar" content="#666"/>
+          <meta name="color:scrollbarbackground" content="#fff"/>
+          <meta name="color:tooltip" content="#fff"/>
+          <meta name="color:tooltiptext" content="#999"/>
+          <meta name="color:tooltipborder" content="{color:postborder}"/>
+           <meta name="color:oddchattext" content="#999"/>
+                      <meta name="color:oddchat" content="#fafafa"/>
+           
+            <meta name="color:selection" content="#E8FFE8"/>
+                  <meta name="color:selectiontext" content="#333"/>
+                 
+                  <meta name="if:invertedtumblrcontrols" content="1"/>
+                 
+                 
+                  <meta name="color:text" content="#999"/>
+                  <meta name="color:links" content="#b2b2b2"/>
+                  <meta name="color:blockquote" content="#ddd"/>
+                  <meta name="color:title" content="#333"/>
+               
+                  <meta name="color:headerbar" content="#333"/>
+                  <meta name="color:headerlinks" content="#fff"/>
+                  <meta name="color:headerlinkshover" content="#444"/>
+                  <meta name="color:headerlinkstexthover" content="#fff"/>
+                  <meta name="color:background" content="#fff"/>
+                  <meta name="color:post" content="#fff"/>
+                  <meta name="color:quotesource" content="#333"/>
+                 
+                   <meta name="color:ask" content="#fafafa"/>
+                  <meta name="color:asktext" content="#333"/>
+                  <meta name="color:postborder" content="#ddd"/>
+                  <meta name="color:infobox" content="#fafafa"/>
+                  <meta name="color:posttitle" content="#fafafa"/>
+                  <meta name="color:posttitletext" content="#333"/>
+                  <meta name="color:infolink" content="#bbb"/>
+                 
+                  <meta name="font:mainfont" content="consolas"/>
+                  <meta name="font:titlefont" content="helvetica"/>
+                  <meta name="font:headerlinks" content="helvetica"/>
+                  <meta name="font:postitle" content="helvetica"/>
+                 
+                  <meta name="color:hoverbuttons" content="#fff"/>
+                  <meta name="color:hoverbuttonstext" content="#999"/>
+                 
+                  <meta name="if:greyreblogbutton" content="1"/>
+                  <meta name="if:blackreblogbutton" content="0"/>
+                  <meta name="if:whitereblogbutton" content="0"/>
+                 
+                  <meta name="text:iconwidth" content="100px"/>
+                  <meta name="text:iconheight" content="100px"/>
+                 
+                  <meta name="if:header" content="1"/>
+                   <meta name="if:icon" content="1"/>
+                    <meta name="if:6links" content="1"/>
+                     <meta name="if:roundicon" content="1"/>
+                       
+                                    <meta name="text:link1" content="Link1"/>
+<meta name="text:link1url" content=""/>
+<meta name="text:link2" content="Link2"/>
+<meta name="text:link2url" content=""/>
+<meta name="text:link3" content="Link3"/>
+<meta name="text:link3url" content=""/>
+<meta name="text:link4" content="Link4"/>
+<meta name="text:link4url" content=""/>
+<meta name="text:link5" content="Link5"/>
+<meta name="text:link5url" content=""/>
+<meta name="text:link6" content="Link6"/>
+<meta name="text:link6url" content=""/>
+                 
+                  <meta name="text:titlesize" content="35px"/>
+                  <meta name="text:postitlesize" content="13px"/>
+                  <meta name="text:quotesize" content="14px"/>
+                  <meta name="text:headerlinkssize" content="12px"/>
+                  <meta name="text:mainfontsize" content="12px"/>
+                  <meta name="text:descriptionsize" content="13px"/>
+                 
+                  <meta name="image:icon" content="http://40.media.tumblr.com/1dfb424eb8ab01b18d30a8002f14652b/tumblr_nwrz8nxbeE1uo3lg3o1_400.jpg"/>
+                 
+                    <meta name="image:header" content="https://images.unsplash.com/photo-1439546743462-802cabef8e97?fit=crop&fm=jpg&h=800&ixlib=rb-0.3.5&q=80&w=1450"/>
+                 
+       
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+       
+        <meta name="if:darkcredit" content="0"/>
+                   <meta name="if:creditonleftside" content="0"/>
+       
+        <style type ="text/css">
+       
+         iframe#tumblr_controls {
+           position: fixed; top: 15px; right: 15px;
+       }
+       
+                /* don't touch credit thanks! */
+         #credit {
+            position: fixed; font-family: helvetica; bottom: 45px; z-index: 99999999; color: #333; right: 45px;
+        } #credit a { line-height: 135%; position: fixed; bottom: 45px; color: transparent; letter-spacing: px; {block:ifcreditonleftside}left:45px;{/block:ifcreditonleftside}{block:ifnotcreditonleftside}right: 45px;{/block:ifnotcreditonleftside} font-weight: 700; font-size: 10px; background: #eee; width: 12px; height: 9px; overflow: hidden; text-transform: uppercase; color: #333; font-size: 8px; padding: 5px;  {block:ifdarkcredit} color: #fff; background: #222; {/block:ifdarkcredit}
+}
+/* don't touch credit thanks! */
+       
+        {block:ifinvertedtumblrcontrols}
+         iframe#tumblr_controls { white-space:nowrap; -webkit-filter: invert(100%); -moz-filter: invert(100%); -o-filter: invert(100%); -ms-filter: invert(100%); filter: invert(100%); opacity:1;}
+         {/block:ifinvertedtumblrcontrols}
+       
+         ::-webkit-scrollbar-thumb {
+height:auto;
+background-color: {color:scrollbar};
+z-index: 9999;
+}
+::-webkit-scrollbar {
+height:6px;
+width:8px;
+padding:4px;
+background: transparent;
+background-color: transparent;
+}
+ 
+ 
+::-moz-selection { /* Code for Firefox */
+    color: {color:selectiontext};
+    background: {color:selection};
+}
+ 
+::selection {
+    color: {color:selectiontext};
+    background: {color:selection};
+}
+           
+           #s-m-t-tooltip{
+    position:fixed;
+    margin-top: -10px;
+    margin-left: 15px;
+    z-index:99999999999999999999;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    font-size:9px;
+    border: solid 1px {color:tooltipborder};
+    text-transform:uppercase;
+    background: {color:tooltip}; color: {color:tooltiptext};
+}
+           
+            blockquote {
+                border-left: solid 1px {color:blockquote};
+                padding-left: 10px;
+            }
+           
+            html {
+                 margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+           
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                color: {color:text};
+               font-family: {font:mainfont};
+                background: {color:background};
+            }
+           
+            #content {
+                margin: auto;
+                {block:indexpage}
+                width: 960px;
+                {/block:indexpage}
+                {block:permalinkpage}
+                width: 320px;
+                {/block:permalinkpage}
+            }
+           
+         @media screen and (max-width: 799px) {
+    #linkthing {
+        display: none;
+    }
+}
+           
+             @media screen and (min-width: 1100px) {
+    #content {
+        {block:indexpage}
+        width: 960px;
+        {/block:indexpage}
+    }
+}  
+           
+            @media screen and (max-width: 1099px) {
+    #content {
+        {block:indexpage}
+        width: 640px;
+        {/block:indexpage}
+    }
+}
+ 
+ @media screen and (max-width: 799px) {
+    #content {
+        width: 320px;
+    }
+}
+ 
+ 
+           
+            .post {
+                font-size: {text:mainfontsize};
+                  width: 300px;
+                  float: left;
+                  position: static;
+                  {block:indexpage}
+                  margin: 10px;
+                  {/block:indexpage}
+                  {block:permalinkpage}
+                  margin: 0px;
+                  margin-top: 10px;
+                  {/block:permalinkpage}
+            }
+           
+           
+           a {
+               color: {color:links};
+               text-decoration: none;
+           }
+           
+           .photo {
+               position: relative;
+           }
+           
+           .box2 {
+               position: absolute;
+               bottom: 20px;
+               left: 20px;
+               opacity: 0;
+               -moz-transition-duration:0.5s;
+-webkit-transition-duration:0.5s;
+-o-transition-duration:0.5s;
+           }
+           
+           .photo:hover .box2, .photoset:hover .box2 {
+               opacity: 1;
+               -moz-transition-duration:0.5s;
+-webkit-transition-duration:0.5s;
+-o-transition-duration:0.5s;
+           }
+           
+           #reblog2  {
+               list-style: none;
+               background: {color:hoverbuttons};
+               padding: 10px;
+             
+               width: 15px;
+           }
+           
+           #timeago2 {
+               background: {color:hoverbuttons};
+               padding: 10px;
+               color: {color:hoverbuttonstext};
+                margin-top: 10px;
+           }
+           
+           #timeago2 a {
+               background: {color:hoverbuttons};
+           }
+           
+            .photo img {
+               width: 100%;
+                margin-bottom: -4px;
+            }
+           
+           .photoset {
+               width: 100%;
+               max-height: 100%;
+                margin-bottom: -4px;
+           }
+           
+           .photoset img {
+               width: 100%;
+               max-height: 100%;
+           }
+           
+           
+            .albumart img {
+                width: 100%;
+                height: 100%;
+                margin-bottom: -3px;
+            }
+           
+           
+           
+            .chat .odd {
+              padding: 5px;
+              left: 0px;
+              list-style: none;
+          }
+         
+          .chat .even {
+              padding: 5px;
+              list-style: none;
+          }
+           
+           
+             #postnotes {
+              margin-top: 10px;
+              font-size: 9px;
+          }
+         
+          ol.notes {
+              text-align: left;
+    padding: 0px;
+    margin: 0px 0px;
+    list-style: none;
+}
+ 
+ol.notes li.note {
+    padding: 5px;
+     list-style: none;
+     border: solid 1px {color:postborder};
+     margin-top: 5px;
+}
+ 
+ol.notes li.note img.avatar {
+    vertical-align: -4px;
+    margin-right: 10px;
+    width: 16px;
+    border-radius: 100%;
+    height: 16px;
+}
+ 
+ol.notes li.note span.action {
+    font-weight: normal;
+}
+ 
+ol.notes li.note .answer_content {
+    font-weight: normal;
+}
+ 
+ol.notes li.note blockquote {
+    padding: 4px 10px;
+    margin: 10px 0px 0px 25px;
+}
+ 
+ol.notes li.note blockquote a {
+    text-decoration: none;
+}
+ 
+ 
+.quote {
+    font-size: {text:quotesize};
+    letter-spacing: 0.5px;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding: 10px;
+}
+ 
+#quotesource {
+    margin-left: 5px;
+    color: {color:quotesource};
+     font-weight: 700;
+}
+ 
+#quotesource a {
+     color: {color:quotesource};
+    font-weight: 700;
+}
+ 
+#ask {
+    background: {color:ask};
+    color: {color:asktext};
+    padding: 10px;
+    border: solid 1px {color:postborder};
+    font-weight: 700;
+}
+ 
+#ask a {
+    color: {color:asktext};
+}
+ 
+#asker {
+    margin-right:2.5px;
+}
+ 
+.answer {
+      border: solid 1px {color:postborder};
+     padding-left: 10px;
+     padding-right: 10px;
+     margin-top: -1px;
+      margin-bottom: -1px;
+}
+           
+           #postinfo a {
+               text-transform: uppercase;
+               color: {color:infolink};
+               font-weight: 700;
+               font-size: 11px;
+           }
+           
+           .tags a {
+               font-size: 11px;
+           }
+           
+           
+           #fixed {
+               position: fixed;
+               z-index: 999;
+               top: 0px;
+               left: 0px;
+               right: 0px;
+               text-align:center;
+           }
+           
+            @media screen and (max-width: 700px) {
+    #fixed {
+        text-align:left;
+    }
+}
+           
+           #links {
+               padding: 20px;
+               background: {color:headerbar};
+               font-family: {font:headerlinks};
+               position: relative;
+           }
+           
+           #links a {
+               color: {color:headerlinks};
+               text-transform: uppercase;
+               font-size: {text:headerlinkssize};
+               margin-right: 15px;
+               margin-left: 15px;
+               letter-spacing: 0.5px;
+               
+           }
+           
+           #header {
+               height: 300px;
+               background-image: url('{image:header}');
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: center center;
+           }
+           
+           #headerbar {
+               margin: auto;
+               margin-top: 50px;
+               width: 500px;
+                 text-align: center;
+                 {block:ifnotheader}
+                padding-top: 50px;
+                {/block:ifnotheader}
+           }
+           
+            @media screen and (max-width: 799px) {
+    #headerbar {
+       width: 300px;
+    }
+}
+           
+           @media screen and (max-width: 799px) {
+    #header {
+       height: 200px;
+    }
+}
+           
+           #title {
+               font-size: {text:titlesize};
+               color: {color:title};
+             font-weight: 900;
+             font-family: {font:titlefont};
+             text-transform: uppercase;
+             padding-bottom: 10px;
+             letter-spacing: 2px;
+           }
+           
+           #desc {
+               font-size: {text:descriptionsize};
+           }
+           
+           #infobox {
+               background: {color:infobox};
+               color: {color:infolink};
+               padding: 10px;
+               border: solid 1px {color:postborder};
+           }
+           
+           #buttons {
+               float: right;
+           }
+           
+           #buttons li {
+               display: inline-block;
+           }
+           
+           #reblog {
+               margin-right: 0px;
+           }
+           
+           #infobox a {
+               text-transform: uppercase;
+           }
+           
+           #extralinks {
+               position: absolute;
+              background: {color:headerbar};
+               top:75px;
+               left: 20px;
+               font-size: {text:headerlinkssize};
+              color: {color:headerlinks};
+               padding: 10px;
+               display: none ;
+               text-align:left;
+           }
+           
+           #extralinks a {
+               margin-right: 0px;
+                margin-left: 0px;
+                 width: 100px;
+               display: block;
+               padding:5px;
+               text-transform: capitalize;
+               color: {color:headerlinks};
+               -moz-transition-duration:0.5s;
+-webkit-transition-duration:0.5s;
+-o-transition-duration:0.5s;
+           }
+           
+           #info {
+               padding: 10px;
+               border: solid 1px {color:postborder};
+               margin-top: -1px;
+           }
+           
+       
+           #extralinks a:hover {
+               background: {color:headerlinkshover};
+               color: {color:headerlinkstexthover};
+               -moz-transition-duration:0.5s;
+-webkit-transition-duration:0.5s;
+-o-transition-duration:0.5s;
+           }
+           
+           .tumblrAutoPager_page_info, .tumblrAutoPager_page_separator {display:none;}
+#infscr-loading {display:none;}
+.navigation {display:none!important;}
+ 
+#over{
+height:3500px!important;
+position:absolute;
+top:0px;
+left:0px;
+width: 100%;}
+ 
+#space {
+    height: 50px;
+}
+ 
+.posttitle {
+    text-align: center;
+    font-family: {font:posttitle};
+    padding: 10px;
+    color: {color:posttitletext};
+    font-size: {text:postitlesize};
+    font-weight: 900;
+    border: solid 1px {color:postborder};
+    text-transform: uppercase;
+    background: {color:posttitle};
+}
+ 
+.textpost {
+    margin-top: -1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px {color:postborder};
+    margin-bottom: -1px;
+    background: {color:post};
+    overflow-x: auto;
+}
+ 
+.textpost img, .chat img, blockquote img, linkpost img {
+    max-width: 100px;
+    height: auto;
+}
+ 
+.quote {
+    padding: 10px;
+    border: solid 1px {color:postborder};
+    margin-bottom: -1px;
+    background: {color:post};
+}
+ 
+.audio {
+    padding: 10px;
+    border: solid 1px {color:postborder};
+    margin-bottom: -1px;
+    background: {color:post};
+}
+ 
+.audio li {
+    padding: 10px;
+    list-style: none;
+    border: solid 1px {color:postborder};
+    margin-top: -1px;
+    background: {color:post};
+}
+ 
+.chat {
+    padding: 10px;
+    border: solid 1px {color:postborder};
+    margin-bottom: -1px;
+    background: {color:post};
+}
+ 
+.chat li {
+    padding: 5px;
+    border: solid 1px {color:postborder};
+    margin-top: -1px;
+}
+ 
+#linkpost {
+    padding-top: 5px;
+    padding-bottom: 5px;
+     padding-left: 10px;
+    padding-right: 10px;
+    background: {color:post};
+    border: solid 1px {color:postborder};
+    margin-bottom: -1px;
+}
+ 
+#host {
+    text-transform: capitalize;
+}
+ 
+#icon {
+    {block:ifroundicon}
+    border-radius: 100%;
+    {/block:ifroundicon}
+    width: {text:iconwidth};
+    height: {text:iconheight};
+    margin: auto;
+    margin-bottom: 25px;
+    background-image: url('{image:icon}');
+    background-size: cover;
+}
+           
+                   
+.media {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  }
+ 
+.media iframe,
+.media object,
+.media embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+           
+        </style>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    </head>
+   
+   
+   
+    <body>
+       
+       
+         <div id="credit">
+        <a href="http://sethscodes.tumblr.com" title="Theme by sethscodes">SC</a></div>
+       
+       <div id="fixed">
+           <div id="links">
+               <a href="/"><i class="fa fa-home"></i><span id="linkthing"> Home</span></a>
+               <a href="/ask"><i class="fa fa-envelope"></i> <span id="linkthing">Ask</span></a>
+               <a id="showlinks" title="click for more links"><i class="fa fa-bars"></i> <span id="linkthing"> Links</span> </a>
+               
+               <div id="extralinks">
+                    <a href="{text:link1url}">{text:link1}</a>
+               <a href="{text:link2url}">{text:link2}</a>
+              <a href="{text:link3url}">{text:link3}</a>
+              <a href="{text:link4url}">{text:link4}</a>
+              {block:if6links}
+              <a href="{text:link5url}">{text:link5}</a>
+               <a href="{text:link6url}">{text:link6}</a>
+                {/block:if6links}
+               </div>
+               
+           </div>
+       </div>
+       
+       {block:ifheader}
+       <div id="header"></div>        
+         {/block:ifheader}
+       
+   
+    {block:indexpage}
+    <div id ="over"></div>
+    {/block:indexpage}
+   
+    <div id="headerbar">
+   
+    {block:ificon}
+    <div id="icon"></div>
+    {/block:ificon}
+       
+        <div id="title">{title}</div>
+        <div id="desc">{description}</div>
+       
+    </div>
+   
+    <div id="space"></div>
+   
+    <div id="content">
+   
+    {block:IndexPage}<div class="column navigation" id="navigation">
+{block:Pagination}
+{block:PreviousPage}<a href="{PreviousPage}" class="navigate">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}" class="navigate" id="nextPage">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}{/block:Pagination}
+</div>{/block:IndexPage}
+       
+    {block:posts}  
+   
+   
+   
+   
+      <!-- {block:NoRebloggedFrom}
+{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}
+{/block:NoRebloggedFrom} -->
+       
+       {block:ContentSource}<!-- {SourceURL}
+{block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+{/block:ContentSource}
+       
+        <div class="post">
+       
+         {block:title}
+        <div class="posttitle">{title}</div>
+        {/block:title}
+       
+       
+        {block:quote}
+       <div class="quote"> {quote}<span id="quotesource">-{source}</span> </div>
+       {block:indexpage}
+       <div id="infobox">
+           <a href="{permalink}" title="{NoteCountWithLabel}">{timeago}</a>
+           
+           <div id="buttons">
+           
+           {block:ifgreyreblogbutton}
+                <li id="reblog">{reblogButton color="grey" size="15"}</li>
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+                <li id="reblog">{reblogButton color="black" size="15"}</li>
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                <li id="reblog">{reblogButton color="white" size="15"}</li>
+                {/block:ifwhitereblogbutton}
+               
+           </div>
+           
+       </div>
+       {/block:indexpage}
+        {/block:quote}
+       
+        {block:text}
+       {block:body} <div class="textpost"> {body} </div> {/block:body}
+        {block:indexpage}
+       <div id="infobox">
+           <a href="{permalink}" title="{NoteCountWithLabel}">{timeago}</a>
+           
+           <div id="buttons">
+           
+           {block:ifgreyreblogbutton}
+                <li id="reblog">{reblogButton color="grey" size="15"}</li>
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+                <li id="reblog">{reblogButton color="black" size="15"}</li>
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                <li id="reblog">{reblogButton color="white" size="15"}</li>
+                {/block:ifwhitereblogbutton}
+               
+           </div>
+           
+       </div>
+       {/block:indexpage}
+        {/block:text}
+       
+        {block:panorama}
+        <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />
+        {/block:panorama}
+       
+        {block:video}
+        <div class="media"> {video-400} </div>
+        {block:indexpage}
+       <div id="infobox">
+           <a href="{permalink}" title="{NoteCountWithLabel}">{timeago}</a>
+           
+           <div id="buttons">
+           
+           {block:ifgreyreblogbutton}
+                <li id="reblog">{reblogButton color="grey" size="15"}</li>
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+                <li id="reblog">{reblogButton color="black" size="15"}</li>
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                <li id="reblog">{reblogButton color="white" size="15"}</li>
+                {/block:ifwhitereblogbutton}
+               
+           </div>
+           
+       </div>
+       {/block:indexpage}
+        {/block:video}
+       
+        {block:Answer}
+       
+       <div id="ask"> <span id="asker"> {Asker} said:</span>{Question} </div>
+       
+        <div class="answer"> {Answer} </div>
+        {block:indexpage}
+       <div id="infobox">
+           <a href="{permalink}" title="{NoteCountWithLabel}">{timeago}</a>
+           
+           <div id="buttons">
+           
+           {block:ifgreyreblogbutton}
+                <li id="reblog">{reblogButton color="grey" size="15"}</li>
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+                <li id="reblog">{reblogButton color="black" size="15"}</li>
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                <li id="reblog">{reblogButton color="white" size="15"}</li>
+                {/block:ifwhitereblogbutton}
+               
+           </div>
+           
+       </div>
+       {/block:indexpage}
+       
+        {/block:Answer}
+       
+       {block:Link}
+       <div id="linkpost">
+         {block:Host}
+        <div id="host">
+        <a href="{URL} "> {Host} </a>
+        </div>
+        {/block:Host}
+        {block:Excerpt} <div id="linkpostexcerpt">{Excerpt}</div> {/block:Excerpt}
+         {block:Description} <div id="linkdescription"> {Description} </div> {/block:Description}
+       </div>
+       {block:indexpage}
+       <div id="infobox">
+           <a href="{permalink}" title="{NoteCountWithLabel}">{timeago}</a>
+           
+           <div id="buttons">
+           
+           {block:ifgreyreblogbutton}
+                <li id="reblog">{reblogButton color="grey" size="15"}</li>
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+                <li id="reblog">{reblogButton color="black" size="15"}</li>
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                <li id="reblog">{reblogButton color="white" size="15"}</li>
+                {/block:ifwhitereblogbutton}
+               
+           </div>
+           
+       </div>
+       {/block:indexpage}
+        {/block:Link}
+       
+       
+          {block:chat}
+<div class="chat">
+        {block:Lines}<li class="{Alt}">{block:Label} <b>{Label}</b> {/block:Label}{Line}</li>{/block:Lines}
+</div>
+{block:indexpage}
+       <div id="infobox">
+           <a href="{permalink}" title="{NoteCountWithLabel}">{timeago}</a>
+           
+           <div id="buttons">
+           
+           {block:ifgreyreblogbutton}
+                <li id="reblog">{reblogButton color="grey" size="15"}</li>
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+                <li id="reblog">{reblogButton color="black" size="15"}</li>
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                <li id="reblog">{reblogButton color="white" size="15"}</li>
+                {/block:ifwhitereblogbutton}
+               
+           </div>
+           
+       </div>
+       {/block:indexpage}
+         
+        {/block:chat}
+       
+        {block:audio}
+       
+       <div class="audio">
+       
+        {block:AlbumArt}
+<div class="albumart"><img src="{AlbumArtURL}"></div>
+{/block:AlbumArt}
+ 
+{block:AudioPlayer}
+ 
+<li>{AudioPlayerWhite}</li>
+ 
+{/block:AudioPlayer}
+       
+       
+           
+            {block:Artist}
+<li>Artist: {Artist}</li>
+{/block:Artist}
+ 
+{block:Album}
+<li>Album: {Album}</li>
+{/block:Album}
+ 
+{block:TrackName}
+<li>Track: {TrackName}</li>
+{/block:TrackName}
+           
+       
+       
+       </div>
+       
+       {block:indexpage}
+       <div id="infobox">
+           <a href="{permalink}" title="{NoteCountWithLabel}">{timeago}</a>
+           
+           <div id="buttons">
+           
+           {block:ifgreyreblogbutton}
+                <li id="reblog">{reblogButton color="grey" size="15"}</li>
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+                <li id="reblog">{reblogButton color="black" size="15"}</li>
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                <li id="reblog">{reblogButton color="white" size="15"}</li>
+                {/block:ifwhitereblogbutton}
+               
+           </div>
+           
+       </div>
+       {/block:indexpage}
+       
+        {/block:audio}
+       
+        {block:photo}
+        <div class="photo">        
+        <img src="{photoUrl-400}">
+       {block:indexpage}
+        <div class="box2">
+            <div id="reblog2">{block:ifgreyreblogbutton}
+                {reblogButton color="grey" size="15"}
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+             {reblogButton color="black" size="15"}
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                {reblogButton color="white" size="15"}
+                {/block:ifwhitereblogbutton}</div>
+          <div id="timeago2"><a href="{permalink}">{timeago}</a></div>  
+        </div>
+         {block:indexpage}
+       
+        </div>
+        {/block:photo}
+       
+        {block:Photoset}
+        <div class="photoset">
+            {block:Photos}<img src="{PhotoURL-500}"/>
+{/block:Photos}
+ 
+{block:indexpage}
+        <div class="box2">
+            <div id="reblog2">{block:ifgreyreblogbutton}
+                {reblogButton color="grey" size="15"}
+                {/block:ifgreyreblogbutton}
+               
+                {block:ifblackreblogbutton}
+             {reblogButton color="black" size="15"}
+                {/block:ifblackreblogbutton}
+               
+                {block:ifwhitereblogbutton}
+                {reblogButton color="white" size="15"}
+                {/block:ifwhitereblogbutton}</div>
+          <div id="timeago2"><a href="{permalink}">{timeago}</a></div>  
+        </div>
+         {block:indexpage}
+ 
+            </div>
+        {/block:Photoset}
+       
+       
+       
+        {block:permalinkpage}
+        {block:caption}
+        <div id="caption">{caption}</div>
+        {/block:caption}
+        {/block:permalinkpage}
+       
+       
+       
+        {block:date}
+       
+       
+       
+       {block:permalinkpage}
+       <div id="info">
+       
+       <div id="postinfo">
+       
+       
+        {block:NoteCount}
+        <a href="{permalink}">{NoteCountWithLabel}</a>
+        {/block:NoteCount}
+       
+        {block:RebloggedFrom}
+        <a href="{ReblogParentURL}" title="{ReblogParentName}">Via</a>
+        {block:ContentSource}<a href="{ReblogRootURL}" title="{ReblogRootName}">Source</a>{/block:ContentSource}
+        {/block:RebloggedFrom}
+       </div>
+       
+        {block:HasTags}
+        <div class="tags">
+        {block:tags}
+        <a href="{TagURL}">#{tag}</a>
+        {/block:tags}
+        </div>
+        {/block:HasTags}
+       
+       
+        {block:PostNotes} <div id="postnotes"> {PostNotes} </div> {/block:PostNotes}
+       
+       </div>
+       {/block:permalinkpage}
+       
+        {/block:date}
+       
+       
+        </div>
+       
+   
+    {/block:posts}
+   
+   
+       
+    </div>    
+       
+       
+       
+       
+       
+    </body>
+   
+   
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+ 
+<script>
+    $(document).ready(function(){
+       $("#showlinks").click(function(){
+          $("#extralinks").fadeToggle(250);
+       });
+    });
+</script>
+   
+   
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+<script>
+ 
+(function($){
+ 
+$(document).ready(function(){
+ 
+$("a[title]").style_my_tooltips({
+ 
+tip_follows_cursor:true,
+ 
+tip_delay_time:30,
+ 
+tip_fade_speed:300,
+ 
+attribute:"title"
+ 
+});
+ 
+});
+ 
+})(jQuery);
+ 
+</script>
+ 
+ 
+ 
+ 
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/me5sfsd/12Qlmj66n/script.js"></script>
+ 
+<script type="text/javascript">
+$(window).load(function(){
+var $wall = $('#content');
+$wall.imagesLoaded(function(){
+$wall.masonry({
+itemSelector: '.post',
+isAnimated : true
+});
+});
+$wall.infinitescroll({
+navSelector : "div#navigation",
+nextSelector : "div#navigation a#nextPage",
+itemSelector : '.post',
+loadingImg : "",
+loadingText : " ",
+donetext : " ",
+extraScrollPx : 2500,
+bufferPx : 2500,
+debug : false,
+errorCallback: function() {
+$('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
+}},
+function( newElements ) {
+var $newElems = $( newElements );
+$newElems.hide();
+$newElems.imagesLoaded(function(){
+$wall.masonry( 'appended', $newElems, {isAnimated: true, animationOptions: {duration: 250, easing: 'linear', queue: false}}, function(){$newElems.fadeIn('slow');} );
+});
+}); $('#content').show(500);
+});
+</script>
+ 
+<script language="JavaScript">
+function function1(){
+window.scrollTo(0,5);
+}
+function function2(){
+window.scroll(0,2);
+}
+ 
+ 
+</script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+</html>
